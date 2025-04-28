@@ -1,18 +1,51 @@
 /* CSS Document */
 body{
-    background-color:grey;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 60px;
+    background-color: #121821;
+    color: #E0E6F1;   
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
-    margin: 30px;
+    margin: 10px;
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 16px;
 }
-p , h1 , h2 , h3 , h4 , h5 , h6, li , figcaption{
-    color: white;
+.profile-card-container, 
+.box, 
+.proj-box, 
+.project-card {
+    background-color: #1E293B;
+    border: 3px solid #FFB800;
+    box-shadow:
+      0 4px 15px rgba(255, 184, 0, 0.6),  
+      0 6px 20px rgba(0, 0, 0, 0.7);      
+    border-radius: 12px;
+    opacity: 0.95;
+}
+.custom-title{
+    display: block;
+    color: #FFB800;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+p ,title, h1 , h2 , h3 , h4 , h5 , h6, li , figcaption{
+    color: #E0E6F1;
     margin: 0;
     padding: 10px;
+}
+a {
+    color: #FFB800;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FFCB45;
 }
 h2{
     text-align: center;
@@ -20,48 +53,96 @@ h2{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-header{
-    opacity: 0.8;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.navbar{
-    overflow: hidden;
-    border: 4px solid gold;
-    background-color: #333;
+.site-header{
+    position: fixed;
+    top: 0; left: 0;
     width: 100%;
+    height: 60px;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    opacity: 0.8;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1100;
+    background: #1B2430;
+    border-bottom: 4px solid #FFB800;
+    box-shadow: 0 2px 8px rgba(255, 184, 0, 0.7);
 }
-.navbar a{
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    color: white;
+.site-header .logo{
+    color: ghostwhite;
+    font-size: 24px;
     font-weight: bold;
-    text-decoration: none;
-    font-size: 17px;
-    margin: 4px 0
+}
+.drawer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background: #1B2430;
+    box-shadow: 2px 0 15px rgba(255, 184, 0, 0.5);
+    overflow-x: hidden;
+    transition: width 0.5s ease;
+    z-index: 1001;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.6);
 }
 
-.navbar a:hover{
-    background-color: #443c3c;
-    color: rgb(229, 20, 20);
+.drawer.open{
+    width: 250px;
 }
+.drawer ul{
+    list-style: none;
+    padding: 0;
+    margin: 60px 0 0 ;
+}
+
+.drawer ul li{
+    margin-bottom: 8px;
+}
+
+.drawer ul li a {
+    display: block;
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+
+.drawer ul li a:hover {
+    background: #FFCB45;
+    color: #121821;
+}
+
+#drawer-toggle {
+    z-index: 1002;
+    position: relative; /* inside header */
+    top: 0;
+    left: 0;
+    background: transparent;
+    border: none;
+    color: ghostwhite;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    transition: color 0.3s;
+  }
+  
+  #drawer-toggle:hover {
+    color: gold;
+  }
+
 .profile-card-container {
+    background-color: #333;
+    border: 4px solid gold;
+    opacity: 0.8;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
     max-width: 900px;
-    margin: 60px auto;
+    margin: 60px;
     padding: 20px;
     flex-wrap: wrap; 
   }
@@ -73,23 +154,66 @@ header{
     display: block;
   }
   
-  .profile-card-text {
-    color: white;
-    text-align: left;
-    font-size: 18px;
-  }
-  
   .profile-card-text h2 {
-    font-size: 28px;
+    color: white;
+    font-size: 15vh;
     margin-bottom: 8px;
+    font-weight: bold;
   }
-  
+  .typewriter {
+    width: 11ch;
+    border-right: 3px solid #FFB800;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: animate1 1s steps(10) forwards,
+    animate2 .5s infinite alternate;
+    }
+  @keyframes animate2{
+    from {
+        border-right: transparent;
+    }
+  }
+  @keyframes animate1{
+    from{
+        width: 0
+    }
+  }
   .profile-card-text h3 {
+    color: white;
     font-size: 20px;
     font-weight: normal;
   }
+.abt-contact{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap; 
+}
+.box{
+    opacity: 0.8;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20vh;
+    font-size: 20px;    
+    max-width: 1000px;
+    height: auto;
+    padding: 20px;
+    flex-wrap: wrap; 
+}
 
-
+.proj-box{
+    opacity: 0.9;
+    margin: auto;
+    margin-top: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;    
+    padding: 20px;
+    flex-wrap: wrap; 
+}
 .projects-container{
     border-radius: 10px;
     padding: 10px;
@@ -97,8 +221,8 @@ header{
     display: grid;
     grid-template: auto / 1fr 1fr;
     column-gap: 10px;
-    justify-items: center;
-    align-items: center;
+    justify-items: stretch;
+    align-items: stretch;
 
 }
 
@@ -111,9 +235,6 @@ header{
     margin-bottom: 10px;
 }
 .project-card{
-    border: 4px solid gold;
-    background-color: black;
-    border-radius: 10px;
     padding: 10px;
     width: 100%;
     min-height: 300px;
@@ -145,8 +266,6 @@ header{
     right: 20px;
     height: 30px;
     width: 30px;
-    background-color: #333;
-    color: white;
     font-size: 14px;
     border: none;
     border-radius: 50%;
@@ -154,46 +273,105 @@ header{
     padding: 0;
     text-align: center;
     z-index: 1000;
+    background-color: #1B2430;
+    color: #FFB800;
+    box-shadow: 0 0 8px #FFB800;
 }
 #totop:hover{
-    background-color: gold;
-    color: black;
+    background-color: #FFB800;
+    color: #121821;
+    box-shadow: 0 0 15px #FFB800;
 }
-.navbar a,#totop{
-    transition: all 0.3s ease;
-}
+
 html {
+    scroll-padding-top: 60px;
     scroll-behavior: smooth;
 }
 
 .hero-section{
-    height: 100vh;
+   background: url(../images/BACKGROUND.jpg)  center center / cover no-repeat fixed;
+   height: 100vh;
+   min-height: 50vh;
+   width: 100%;
    display: flex;
+   text-align: center;
    align-items: center;
    justify-content: center;
    flex-direction: column;
+   border-bottom-left-radius: 25% 30%;
+   border-bottom-right-radius: 25% 30%;
+   transition: background-position 0.3s ease-out;
+   background-position: center 0;
+}
+
+.forms{
+    opacity: 0.8;
+    box-shadow:
+    0 4px 15px rgba(255, 184, 0, 0.6),  
+    0 6px 20px rgba(0, 0, 0, 0.7);  
+    border: 4px solid gold;
+    margin: auto;
+    background-color: #333;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20vh;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100vh;
+    height: auto;
+}
+.forms input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.forms button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #FFB800;
+    color: #121821;
+}
+.forms button:hover{
+    background-color: #FFCB45;
+    color: #121821;
+}
+
+.footer{
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20vh;
+    opacity: 0.8;
 }
 
 @media (max-width:768px) {
     .projects-container {
-      grid-template-columns: 1fr; /* Stack cards vertically on small screens */
+      grid-template-columns: 1fr; 
     }
-  
-    .navbar {
-      flex-direction: column;
-      align-items: center;
+    .typewriter{
+        max-width: 500px;
+        width: 90%;
+        margin: 2rem auto;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+    
+    .hero-section {
+      height: 100vh;
+      padding: 20px;
+      background-position: center center;
     }
-  
-    .navbar a {
-      width: 100%;
-      text-align: center;
-      padding: 12px;
-      border-top: 1px solid #555;
-      border-bottom: 1px solid #555;
-      font-size: 16px;
-
-    }
-  
     body {
       margin: 10px;
     }
@@ -217,4 +395,11 @@ html {
         width: 80%;
         height: auto;
     }
+    .forms {
+        max-width: 500px;
+        width: 90%;
+        margin: 2rem auto;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
   }
