@@ -1,150 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <meta name="description" content="Anraj Singh's Portfolio - Computing Science Student, Android Developer, Web Developer. Explore my projects and skills.">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css">
-
-</head>
-<body>
+    <meta
+      name="description"
+      content="Anraj Singh's Portfolio - Computing Science Student, Android Developer, Web Developer. Explore my projects and skills."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <div class="logo">ⒶⓈⒹ</div>
-        <button id="drawer-toggle" aria-label="Toggle navigation">☰</button>
+      <div class="logo">ⒶⓈⒹ</div>
+      <button id="drawer-toggle" aria-label="Toggle navigation">☰</button>
     </header>
     <aside id="side-drawer" class="drawer">
-        <ul>
-            <li><a href="#abtme">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#proj">Projects</a></li>
-            <li><a href="#Education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#abtme">About me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#proj">Projects</a></li>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </aside>
     <main>
-        <section class="hero-section">
-            <div class="profile-card-container">
-                <figure class="profile-card">
-                </figure>
-              
-                <div class="profile-card-text">
-                  <h2 class="typewriter">Anraj Singh</h2>
-                  <h3>Computer Science Student</h3>
-                </div>
-              </div>
+      <section class="hero-section">
+        <div class="profile-card-container">
+          <div class="profile-card-text">
+            <h2 class="typewriter">Anraj Singh</h2>
+            <h3>Computer Science Student</h3>
+          </div>
+        </div>
+      </section>
 
-        </section>
-        
-          
-        
-
-        <article class="box">
+      <article class="box">
+        <div class="about-container">
+          <figure class="profile">
+            <img src="/images/profile pic.png" alt="" />
+          </figure>
+          <div class="about-text">
             <h2 class="custom-title" id="abtme">About me</h2>
-            <p>Hello! I'm Anraj Singh, a Computing Science student and Android developer with a passion 
-                for learning and innovation.<br> I love building apps, solving complex problems, 
-                and helping others through tutoring and volunteering. Whether it's developing new features, leading a team, 
-                or mentoring students, I bring energy, focus, and creativity to everything I do. <br><br>
-                Outside of tech, I enjoy swimming, sports, and giving back to the community.</p>
+            <p>
+              Hello! I'm Anraj Singh, a Computing Science student and Android
+              developer with a passion for learning and innovation.<br />
+              I love building apps, solving complex problems, and helping others
+              through tutoring and volunteering. Whether it's developing new
+              features, leading a team, or mentoring students, I bring energy,
+              focus, and creativity to everything I do. <br /><br />
+              Outside of tech, I enjoy swimming, sports, and giving back to the
+              community.
+            </p>
 
-                <p>Scroll down to learn more about my skills, projects, and journey!</p>
-                <a href="#contact" class="abt-contact">Contact me..</a>
-        </article>
-        <div class="box" id="skills" >
-            <h2 class="custom-title">Skills</h2>
-            <ul>
-                <li>Programming Languages: Java, Python, C, HTML, CSS, JavaScript</li>
-                <li>Web Development: Responsive Design, REST APIs, Firebase Integration, MongoDB</li>
-                <li>Android Development: Java (Android Studio), Firebase Storage, UI/UX Design</li>
-                <li>Tools and Frameworks: Git, MySQL, SQLite</li>
-                <li>CSS Frameworks: Bootstrap, Tailwind CSS (basic proficiency)</li>
-                <li>Other: Problem Solving, Data Structures and Algorithms, Software Engineering Principles, Agile Methodologies</li>
-                <li>Soft Skills: Teamwork, Communication, Adaptability, Time Management</li>
-            </ul>
+            <p>
+              Scroll down to learn more about my skills, projects, and journey!
+            </p>
+            <a href="#contact" class="abt-contact">Contact me..</a>
+          </div>
         </div>
-        <div class="proj-box" id="proj">
-            <h2 class="custom-title">My Projects</h2>
+      </article>
+      <div class="box" id="skills">
+        <h2 class="custom-title">Skills</h2>
+        <ul>
+          <li>Programming Languages: Java, Python, C, HTML, CSS, JavaScript</li>
+          <li>
+            Web Development: Responsive Design, REST APIs, Firebase Integration,
+            MongoDB
+          </li>
+          <li>
+            Android Development: Java (Android Studio), Firebase Storage, UI/UX
+            Design
+          </li>
+          <li>Tools and Frameworks: Git, MySQL, SQLite</li>
+          <li>CSS Frameworks: Bootstrap, Tailwind CSS (basic proficiency)</li>
+          <li>
+            Other: Problem Solving, Data Structures and Algorithms, Software
+            Engineering Principles, Agile Methodologies
+          </li>
+          <li>
+            Soft Skills: Teamwork, Communication, Adaptability, Time Management
+          </li>
+        </ul>
+      </div>
+      <div class="proj-box" id="proj">
+        <h2 class="custom-title">My Projects</h2>
         <div class="projects-container" id="proj">
-           
-            <figure class="project-card">
-                <img src="images/app_icon.png" class="custom-appicon" alt="Project 1">
-                <figcaption>📱 Mood Tracking App</figcaption>
-                <p>Developed an Android app that allows users to log daily moods, view mood trends on a map, and filter moods by category. Integrated Firebase for real-time storage and authentication.</p>
+          <figure class="project-card">
+            <img
+              src="images/app_icon.png"
+              class="custom-appicon"
+              alt="Project 1"
+            />
+            <figcaption>📱 Mood Tracking App</figcaption>
+            <p>
+              Developed an Android app that allows users to log daily moods,
+              view mood trends on a map, and filter moods by category.
+              Integrated Firebase for real-time storage and authentication.
+            </p>
+          </figure>
+          <figure class="project-card">
+            <img
+              src="images/socialmedia.png"
+              class="custom-appicon"
+              alt="Project 2"
+            />
+            <figcaption>🐍💬 BreetConnect</figcaption>
+            <p>
+              A Python-based command-line social media system using SQLite that
+              lets users register, log in, post and interact with tweets, search
+              users and tweets, and manage followers, with secure authentication
+              and robust testing.
+            </p>
+          </figure>
 
-            </figure>
-            <figure class="project-card">
-                <img src="images/socialmedia.png" class="custom-appicon" alt="Project 2">
-                <figcaption>🐍💬 BreetConnect </figcaption>
-                <p>A Python-based command-line social media system using SQLite that lets users register, log in, post and interact with tweets, search users and tweets, and manage followers, with secure authentication and robust testing.</p>
-            </figure>
+          <figure class="project-card">
+            <img
+              src="images/expenseTracker.png"
+              class="custom-appicon"
+              alt="Project 3"
+            />
+            <figcaption>💰 Expense Tracker Web App</figcaption>
+            <p>
+              Built a responsive web application to help users track expenses,
+              set budgets, and visualize spending trends. Used Firebase as a
+              backend and deployed the site on GitHub Pages.
+            </p>
+            <a
+              href="https://github.com/Anrajsinghdhanju/Expense_tracker.git"
+              target="_blank"
+              >GitHub</a
+            >
+          </figure>
 
-            
-            <figure class="project-card">
-                <img src="images/expenseTracker.png" class="custom-appicon" alt="Project 3">
-                <figcaption> 💰 Expense Tracker Web App</figcaption>
-                <p>Built a responsive web application to help users track expenses, set budgets, and visualize spending trends. Used Firebase as a backend and deployed the site on GitHub Pages.</p>
-                <a href="https://github.com/Anrajsinghdhanju/Expense_tracker.git" target="_blank">GitHub</a>
-            </figure>
-
-            <figure class="project-card">
-                <img src="images/weatherchecker.png" alt="Project 4">
-                <figcaption> 🌦️ Weather Checker Web App</figcaption>
-                <p> Developed a responsive web application that allows users to check real-time weather updates by city name. Integrated the OpenWeatherMap API to fetch temperature, humidity, and forecast data. Implemented error 
-                    handling for invalid inputs and ensured compatibility across devices using responsive design principles.</p>
-                <a href="https://github.com/Anrajsinghdhanju/Weather_checker.git" target="_blank">GitHub</a>
-            </figure>
-            <figure class="project-card">
-                <img src="images/mongodb.png" class="custom-appicon" alt="Project 5">
-                <figcaption>🔐 TweetVault CRUD </figcaption>
-                <p>This Python program loads tweets from a JSON file into a MongoDB database and provides a command-line interface to search tweets and users, list top tweets and users by popularity, and add new tweets interactively.</p>
-            </figure>
-
+          <figure class="project-card">
+            <img src="images/weatherchecker.png" alt="Project 4" />
+            <figcaption>🌦️ Weather Checker Web App</figcaption>
+            <p>
+              Developed a responsive web application that allows users to check
+              real-time weather updates by city name. Integrated the
+              OpenWeatherMap API to fetch temperature, humidity, and forecast
+              data. Implemented error handling for invalid inputs and ensured
+              compatibility across devices using responsive design principles.
+            </p>
+            <a
+              href="https://github.com/Anrajsinghdhanju/Weather_checker.git"
+              target="_blank"
+              >GitHub</a
+            >
+          </figure>
+          <figure class="project-card">
+            <img
+              src="images/mongodb.png"
+              class="custom-appicon"
+              alt="Project 5"
+            />
+            <figcaption>🔐 TweetVault CRUD</figcaption>
+            <p>
+              This Python program loads tweets from a JSON file into a MongoDB
+              database and provides a command-line interface to search tweets
+              and users, list top tweets and users by popularity, and add new
+              tweets interactively.
+            </p>
+          </figure>
         </div>
-        </div>
-        
-        <article class="box" id="Education">
-            <h2 class="custom-title">Education</h2>
-            <p>University of Alberta <br>
-                Bachelor of Science in Computing Science <br>
-                2023 – Present
-                <br>
-                <br>
-                Relevant Courses: Data Structures and Algorithms, Software Engineering, Database Systems, Web Programming</p>
-        </article>
+      </div>
 
-        <div>
-            <form id="contact" class="forms"  action="">
-                <h2 class="custom-title">Connect with me...</h2>
-                <div class="form-floating">
-                    <input type="text" class="form-control" id="Name" placeholder="name">
-                    <label for="Name">Name</label>
-                  </div>
-                <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
-                    <label for="floatingInputGrid">Email address</label>
-                  </div>
-                  <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2">Comments</label>
-                  </div>
-                <button>Send</button>
-            </form>
-        </div>
+      <article class="box" id="Education">
+        <h2 class="custom-title">Education</h2>
+        <img
+          class="custom-appicon"
+          src="./images/ualbertalogo.jpg"
+          alt="University of Alberta"
+        />
+        <p>
+          University of Alberta <br />
+          Bachelor of Science in Computing Science <br />
+          2023 – Present
+          <br />
+          <br />
+          Relevant Courses: Data Structures and Algorithms, Software
+          Engineering, Database Systems, Web Programming
+        </p>
+      </article>
 
+      <div>
+        <form id="contact" class="forms" action="">
+          <h2 class="custom-title">Connect with me...</h2>
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="Name"
+              placeholder="name"
+            />
+            <label for="Name">Name</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInputGrid"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInputGrid">Email address</label>
+          </div>
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea2"
+              style="height: 100px"
+            ></textarea>
+            <label for="floatingTextarea2">Comments</label>
+          </div>
+          <button>Send</button>
+        </form>
+      </div>
     </main>
     <footer class="footer">
-        <p>© 2025 Anraj Singh</p>
-        <p>
-          📧 <a href="mailto:anraj@ualberta.ca">anraj@ualberta.ca</a> | 
-          💼 <a href="https://www.linkedin.com/in/anrajdhanju" target="_blank">linkedin</a> |
-          💻 <a href="https://github.com/Anrajsinghdhanju" target="_blank">GitHub</a>
-        </p>
-      </footer>
+      <p>© 2025 Anraj Singh</p>
+      <p>
+        📧 <a href="mailto:anraj@ualberta.ca">anraj@ualberta.ca</a> | 💼
+        <a href="https://www.linkedin.com/in/anrajdhanju" target="_blank"
+          >linkedin</a
+        >
+        | 💻
+        <a href="https://github.com/Anrajsinghdhanju" target="_blank">GitHub</a>
+      </p>
+    </footer>
     <a id="totop" href="#">↑</a>
-    
-    <script src="functionality.js"></script>
 
-</body>
+    <script src="functionality.js"></script>
+  </body>
 </html>
