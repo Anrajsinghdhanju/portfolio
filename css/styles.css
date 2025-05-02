@@ -412,6 +412,10 @@ html {
         width: 80%;
         height: auto;
     }
+    .profile img{
+        width: 80%;
+        height: auto;
+    }
     .forms {
         max-width: 500px;
         width: 90%;
