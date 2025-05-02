@@ -35,7 +35,7 @@ body{
     flex-wrap: wrap;
     justify-content: center;
   }
-  .profile img {
+.profile img {
     width: 200px;
     height: auto;
   }
@@ -411,6 +411,16 @@ html {
     .project-card img{
         width: 80%;
         height: auto;
+    }
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about-text {
+        flex: 1;
+        min-width: 250px;
+        text-align: center;
     }
     .profile img{
         width: 80%;
