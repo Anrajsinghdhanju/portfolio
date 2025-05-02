@@ -420,3 +420,9 @@ html {
         box-sizing: border-box;
       }
   }
+  @supports (-webkit-touch-callout: none) {
+    .hero-section {
+      background-attachment: scroll;
+    }
+  }
+  
