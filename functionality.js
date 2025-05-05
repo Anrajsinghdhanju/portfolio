@@ -23,3 +23,4 @@ if (hero) {
         hero.style.backgroundPosition = `center -${bgPositionY}px`;
     });
 }
+
