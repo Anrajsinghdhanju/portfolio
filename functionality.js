@@ -73,7 +73,7 @@ const projects = [
   
   projects.forEach(project => {
     const card = document.createElement("figure");
-    card.className = "projec-card";
+    card.className = "project-card";
   
     card.innerHTML = `
       <img src="${project.image}" class="custom-appicon" alt="${project.title}">
