@@ -224,6 +224,19 @@ h2{
     padding: 20px;
     flex-wrap: wrap; 
 }
+.proj-box-newpage{
+    opacity: 0.9;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;    
+    padding: 20px;
+    flex-wrap: wrap; 
+    transition: 0.5s ease-in ease-out;
+
+}
 .projects-container{
     border-radius: 10px;
     padding: 10px;
@@ -269,6 +282,45 @@ h2{
     margin: 0 auto;
     border-radius: 12px;
 }
+.show-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    grid-column: span 2;
+  }
+
+.show-more-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .show-more-card:hover {
+    background-color: #e6f0ff;
+  }
+  
+  .show-more-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #007bff;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .show-more-link:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
 
 #totop{
     position: fixed;
