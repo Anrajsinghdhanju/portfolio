@@ -27,6 +27,15 @@ if (hero) {
 //for project cards
 const projects = [
     {
+      title: "🤖 AI Productivity Assistant",
+      image: "images/ai_productivity.png",
+      description: `Developed a full-stack AI automation system that integrates Gmail,
+      Google Calendar, and OpenAI's GPT-4 to summarize emails, extract deadlines, 
+      and auto-sync tasks to the user's calendar. Built using Django, Celery, Redis,
+      and PostgreSQL with a production-ready, scalable architecture.`,
+      link: "https://github.com/Anrajsinghdhanju/ai-productivity-assistant"
+    },
+    {
       title: "💰 Expense Tracker Web App",
       image: "images/expenseTracker.png",
       description: `Built a responsive web application to help users track expenses,
@@ -40,6 +49,7 @@ const projects = [
         description: `Developed an Android app that allows users to log daily moods,
               view mood trends on a map, and filter moods by category.
               Integrated Firebase for real-time storage and authentication.`,
+        link: "https://github.com/cmput301-w25/project-tornado_raven.git"
       },
       {
         title: "🐍💬 BreetConnect",
